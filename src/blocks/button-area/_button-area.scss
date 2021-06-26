@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.button-area {
+	$parent: &;
+
+	display: flex;
+
+	&--vertical {
+		flex-direction: column;
+
+		&#{$parent}--center {
+			align-items: center;
+		}
+
+		&#{$parent}--left {
+			align-items: flex-start;
+		}
+
+		&#{$parent}--right {
+			align-items: flex-end;
+		}
+	}
+
+	&--horizontal {
+		flex-direction: row;
+
+		&#{$parent}--center {
+			justify-content: center;
+		}
+
+		&#{$parent}--left {
+			justify-content: flex-start;
+		}
+
+		&#{$parent}--right {
+			justify-content: flex-end;
+		}
+	}
+}

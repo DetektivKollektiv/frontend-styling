@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.navigation-flyout {
+	$parent: &;
+
+	position: absolute;
+	width: 100%;
+	padding: _b__rem(10px) 0 0 0;
+	z-index: 100;
+	display: none;
+
+	&__list {
+		background-color: $color__navigation-flyout-background;
+		padding: _b__rem(10px) _b__rem(16px);
+		border-radius: _b__rem(10px);
+	}
+
+	&__item {
+		list-style-type: none;
+	}
+
+	&__link {
+		@include font__effra;
+		@include _b__font-size-rem(15px);
+
+		color: $color__navigation-flyout-link;
+		padding: _b__rem(4px) 0;
+		display: inline-block;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline;
+		}
+	}
+}
+
+//TODO DEV
+.navigation-main__item {
+	&:active {
+		.navigation-flyout {
+			display: block;
+		}
+	}
+}

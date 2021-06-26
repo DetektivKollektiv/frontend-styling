@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.navigation-breadcrumb {
+	$parent: &;
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__item {
+		@include fontawesome("f054", "regular", "after");
+		@include _b__font-size-rem(12px);
+
+		list-style-type: none;
+		color: $color__navigation-breadcrumb-link;
+		margin: 0 _b__rem(3px);
+	}
+
+	&__link {
+		@include font__effra--medium;
+		@include _b__font-size-rem(16px);
+
+		color: $color__navigation-breadcrumb-link;
+		display: inline-block;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline;
+		}
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&--home {
+			@include fontawesome("f015");
+
+			&:hover,
+			&:focus,
+			&:active {
+				text-decoration: none;
+			}
+		}
+	}
+}

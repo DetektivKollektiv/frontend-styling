@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.footer {
+	padding: _b__rem(16px);
+	background-color: $color__footer-background;
+
+	@include _b__respond-to("min-large") {
+		padding: _b__rem(60px);
+	}
+}

@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.input {
+	$parent: &;
+
+	&__label {
+		@include font__pt-mono--bold;
+		@include _b__font-size-rem(16px);
+
+		color: $color__input-label;
+		margin: 0 0 _b__rem(12px) 0;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__description {
+		@include font__effra--regular;
+		@include _b__font-size-rem(15px);
+
+		color: $color__input-description;
+		margin: 0;
+	}
+
+	&--radio {
+		@include fontawesome("f111");
+
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+		cursor: pointer;
+
+		&::before {
+			@include _b__font-size-rem(16px);
+
+			margin: 0 _b__rem(8px) 0 0;
+		}
+
+		&#{$parent}--selected {
+			@include fontawesome("f058");
+		}
+
+		&#{$parent}--decline {
+			@include fontawesome("f057");
+
+			margin: _b__rem(16px) 0 0 0;
+		}
+
+		&#{$parent}--decline#{$parent}--selected {
+			@include fontawesome("f058");
+		}
+
+		&#{$parent}--disabled {
+			cursor: default;
+		}
+
+		input {
+			display: none;
+		}
+
+		#{$parent}__label {
+			@include font__effra--regular;
+			@include _b__font-size-rem(18px);
+		}
+	}
+
+	&--highlight {
+		#{$parent}__label,
+		&::before {
+			color: $color__input-highlight;
+		}
+	}
+}

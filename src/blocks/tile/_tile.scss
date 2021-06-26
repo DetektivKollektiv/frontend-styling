@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.tile {
+	$parent: &;
+
+	@include tile;
+
+	&--large {
+		@include large-tile;
+	}
+}

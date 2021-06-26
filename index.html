@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>codetekt</title>
+	<link href="dist/style.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="dev">
+		
+		<div class="dev__wrapper">
+			<span class="dev__breakpoint dev__breakpoint--small">small <span class="dev__minor-label">[max-width: 479px]</span></span>
+			<span class="dev__breakpoint dev__breakpoint--medium">medium <span class="dev__minor-label">[min-width: 480px and max-width: 1023px]</span></span>
+			<span class="dev__breakpoint dev__breakpoint--large">large <span class="dev__minor-label">[min-width: 1040px and max-width: 1239px]</span></span>
+			<span class="dev__breakpoint dev__breakpoint--extralarge">extralarge <span class="dev__minor-label">[min-width: 1240px]</span></span>
+			
+			<span class="dev__breakpoint dev__breakpoint--min-medium">min-medium <span class="dev__minor-label">[min-width: 480px]</span></span>
+			<span class="dev__breakpoint dev__breakpoint--min-large">min-large <span class="dev__minor-label">[min-width: 1040px]</span></span>
+			
+			<span class="dev__breakpoint dev__breakpoint--max-medium">max-medium <span class="dev__minor-label">[max-width: 1023px]</span></span>
+			<span class="dev__breakpoint dev__breakpoint--max-large">max-large <span class="dev__minor-label">[max-width: 1239px]</span></span>
+			
+			<span class="dev__breakpoint dev__breakpoint--between-large-and-extralarge">between-large-and-extralarge <span class="dev__minor-label">[min-width:
+				1024px and max-width: 1239px]</span></span>
+		</div>
+
+		<div class="dev__playground">
+		
+			<a href="javascript:;" title="" class="button button--detective">Button</a>
+		
+			<a href="javascript:;" title="" class="button button--mysterious-blue button--detective">Button Mysterious Blue</a>
+		
+			<a href="javascript:;" title="" class="button button--bittersweet button--detective">Bittersweet</a>
+		
+			<a href="javascript:;" title="" class="button button--supernova button--detective">Supernova</a>
+		
+			<a href="javascript:;" title="" class="button button--neon-blue button--detective">Neon Blue</a>
+		
+			<a href="javascript:;" title="" class="button button--white button--detective">White</a>
+		
+			<a href="javascript:;" title="" class="button button--bittersweet button--hallow button--detective">Cowboy!</a>
+		
+			<a href="javascript:;" title="" class="button button--mysterious-blue button--medium button--detective">Medium</a>
+		
+			<a href="javascript:;" title="" class="button button--small button--detective">Small</a>
+		
+		</div>
+
+	</div>
+
+	<header class="header">
+
+		<div class="header__wrapper">
+			<div class="header__logo">
+			
+				<a href="javascript:;" title="Startseite" class="logo">
+					<img src="./src/blocks/logo/codetekt.svg" alt="Startseite" class="logo__image" />
+				</a>
+			
+			</div>
+			
+			<div class="header__navigation-main">
+			
+				<!-- Not logged in -->
+				<nav class="navigation-main" style="display: none;">
+			
+					<ul class="navigation-main__list">
+						<li class="navigation-main__item">
+							<a href="javascript:;" class="navigation-main__link" title="Über uns">Über uns</a>
+						</li>
+						<li class="navigation-main__item">
+							<a href="javascript:;" class="navigation-main__link" title="FAQ">FAQ</a>
+						</li>
+						<li class="navigation-main__item">
+							<a href="javascript:;" class="navigation-main__link" title="Gelöste Fälle">Gelöste Fälle</a>
+						</li>
+						<li class="navigation-main__item">
+							<a href="javascript:;" title=""
+								class="button button--bittersweet button--hallow navigation-main__button navigation-main__button--detective">Detektiv
+								werden</a>
+						</li>
+						<li class="navigation-main__item">
+							<a href="javascript:;" class="navigation-main__link" title="Login">Login</a>
+						</li>
+					</ul>
+			
+				</nav>
+			
+				<!-- Logged in -->
+				<nav class="navigation-main">
+			
+					<ul class="navigation-main__list">
+						<li class="navigation-main__item navigation-main__item--no-spacing">
+							<a href="javascript:;" title=""
+								class="button button--bittersweet button--gentle navigation-main__button navigation-main__button--typewriter">Fall
+								einreichen</a>
+						</li>
+						<li class="navigation-main__item">
+							<a href="javascript:;" class="navigation-main__link" title="FAQ">FAQ</a>
+						</li>
+						<li class="navigation-main__item">
+							<a href="javascript:;" class="navigation-main__link" title="Gelöste Fälle">Gelöste Fälle</a>
+						</li>
+						<li class="navigation-main__item">
+							<div class="userprofile">
+								<div class="userprofile__content">
+									<div class="userprofile__name-wrapper">
+										<div class="userprofile__award userprofile__award--gold"></div>
+										<div class="userprofile__name">
+											John Doe
+										</div>
+									</div>
+									<div class="userprofile__title">
+										Detective Superintendent
+									</div>
+								</div>
+			
+								<div class="userprofile__bubble" style="background-color: #722ED1;">
+									J
+								</div>
+			
+								<div class="userprofile__flyout-call"></div>
+							</div>
+							<div class="navigation-flyout">
+								<ul class="navigation-flyout__list">
+									<li class="navigation-flyout__item">
+										<a href="javascript:;" class="navigation-flyout__link" title="Profil">Profil</a>
+									</li>
+									<li class="navigation-flyout__item">
+										<a href="javascript:;" class="navigation-flyout__link" title="Abmelden">Abmelden</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+			
+				</nav>
+			
+			</div>
+			
+			<div class="header__navigation-mobile">
+				<nav class="navigation-mobile">
+			
+					<div class="navigation-mobile__call"></div>
+			
+					<!-- Here be Overlay Stuff -->
+			
+				</nav>
+			</div>
+		</div>
+
+	</header>
+
+	<main class="page">
+
+		<div class="page__section page__intro">
+
+			<div class="page__intro-left">
+				<nav class="navigation-breadcrumb">
+					<ul class="navigation-breadcrumb__list">
+						<li class="navigation-breadcrumb__item">
+							<a href="javascript:;" class="navigation-breadcrumb__link navigation-breadcrumb__link--home"
+								title="Startseite"></a>
+						</li>
+						<li class="navigation-breadcrumb__item">
+							<a href="javascript:;" class="navigation-breadcrumb__link" title="Navigationspunkt">Navigationspunkt</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="page__headline-wrapper">
+					<h1 class="page__headline">#194928</h1>
+					<span class="page__case-id-description">Fallnummer</span>
+				</div>
+
+				<p class="page__description">
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+					magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+					gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+				</p>
+			</div>
+			<div class="page__intro-right page__badges">
+
+				<div class="badge badge--experience">
+
+					<h3 class="badge__headline">100XP</h3>
+					<span class="badge__description">Erfahrung</span>
+
+				</div>
+
+				<div class="badge badge--detective-amount">
+				
+					<h3 class="badge__headline">3</h3>
+					<span class="badge__description">Detektive</span>
+				
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="page__section page__section--full page__help">
+
+			<div class="help accordion">
+
+				<div class="page__position--center help__action-bar">
+
+					<a href="javascript:;" title="" class="button button--bittersweet button--subtle help__button help__button--flag">Fall melden</a>
+					<a href="javascript:;" title="" class="button button--bittersweet button--subtle help__button help__button--help accordion__call accordion__call--open">
+						<span class="accordion__title">Hilfe zu dieser Seite</span>
+						<span class="accordion__action-description">ausblenden</span>
+					</a>
+
+				</div>
+
+				<div class="help__accordion-content accordion__content">
+
+					<a href="javascript:;" title="" class="help__link">
+
+						<div class="help__icon help__icon--newspaper"></div>
+
+						<h3 class="help__headline">Woran erkenne ich eine gute Quelle?</h3>
+
+						<p class="help__description">Hier haben wir alles zusammengefasst um dir zu helfen gute Quellen zu erkennen.</p>
+
+					</a>
+
+					<a href="javascript:;" title="" class="help__link">
+					
+						<div class="help__icon help__icon--scroll-old"></div>
+					
+						<h3 class="help__headline">Die Quelle ist nicht mehr abrufbar. Was kann ich tun?</h3>
+					
+						<p class="help__description">Eine Anleitung für genau solche Fälle findest du auf dieser Seite.</p>
+					
+					</a>
+
+					<a href="javascript:;" title="" class="help__link">
+					
+						<div class="help__icon help__icon--helping-hands"></div>
+					
+						<h3 class="help__headline">Kann ich den Fall abgeben?</h3>
+					
+						<p class="help__description">Ja, das geht. Hier erfährst du wie.</p>
+					
+					</a>
+
+					<a href="javascript:;" title="" class="help__link">
+					
+						<div class="help__icon help__icon--leaf"></div>
+					
+						<h3 class="help__headline">Eine weitere Frage?</h3>
+					
+						<p class="help__description">Und hier ein weiterer Beschreibungstext, der erklärt, was mich beim Klick darauf erwartet.</p>
+					
+					</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="page__section page__case">
+
+			<article class="case">
+
+				<div class="case__wrapper">
+					<div class="case__section">
+					
+						<h2 class="case__headline">Der Tatbestand</h2>
+					
+						<p class="case__quote">
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+							dolore
+							<a href="javascript:;" class="case__link" title="">https://eine-url.tld</a> magna aliquyam erat, sed diam
+							voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+							Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+							<a href="javascript:;" class="case__link"
+								title="">www.domainname.tld/eine-seite/ein-artikel-mit-langem-titel</a>m nonumy eirmod tempor invidunt ut labore et dolore magna
+						aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+						gubergren, no
+						sea takimata sanctus est Lorem ipsum dolor sit amet.
+						</p>
+					
+					</div>
+					
+					<div class="case__section">
+					
+						<h3 class="case__headline case__headline--sub-headline">Hinterlegte und entdeckte Links</h3>
+					
+						<div class="discovered-links">
+							<a href="javascript:;" title="" class="discovered-links__item">https://eine-url.tld</a>
+							<a href="javascript:;" title=""
+								class="discovered-links__item discovered-links__item--disabled">https://www.domain.tld/0ou2349234iojsdfln</a>
+							<a href="javascript:;" title=""
+								class="discovered-links__item">www.domainname.tld/eine-seite/ein-artikel-mit-langem-titel</a>
+						</div>
+					
+					</div>
+					
+					<div class="case__section">
+					
+						<h3 class="case__headline case__headline--sub-headline">Tags</h3>
+					
+						<div class="tags">
+							<div class="tags__item">Ein Tag</div>
+							<div class="tags__item">Ein weiterer Tag</div>
+							<div class="tags__item">Ein echt sehr langer Tag</div>
+							<div class="tags__item tags__item--hallow tags__item--conclusion-hatespeech">Hatespeech</div>
+							<div class="tags__item tags__item--hallow tags__item--conclusion-no-source">Keine Quelle</div>
+							<div class="tags__item tags__item--hallow tags__item--conclusion-no-imprint">Kein Impressum</div>
+						</div>
+					
+					</div>
+					
+					<div class="case__section">
+					
+						<h3 class="case__headline case__headline--sub-headline">Hintergrundinformationen</h3>
+					
+						<div class="background-information">
+							<div class="background-information__item background-information__item--date">Ein Tag</div>
+							<div class="background-information__item background-information__item--author">Ein weiterer Tag</div>
+						</div>
+					
+					</div>
+				</div>
+
+			</article>
+
+			<article class="case-processing">
+
+				<div class="case-processing__wrapper">
+
+					<div class="case-processing__section">
+
+						<h2 class="case-processing__headline">Die Fallbearbeitung</h2>
+
+					</div>
+
+					<div class="case-processing__section case-processing__section--accept-case">
+
+						<p class="case-processing__accept-case-question page__paragraph">Im Tatbestand siehst du alle für den Fall relevanten Informationen. Weiterer Hilfreicher
+							Text...… Lorem ipsum dolor sit
+							amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore etLorem ipsum dolor sit amet,
+							consetetur sadipscing elitr. Möchtest du diesen Fall annehmen?</p>
+
+							<div class="case-processing__accept-case-buttons button-area button-area--vertical button-area--center">
+
+								<a href="javascript:;" title="" class="button button--neon-blue">Fall annehmen</a>
+								<a href="javascript:;" title="" class="button button--subtle">Fall ablehnen</a>
+
+							</div>
+
+					</div>
+
+					<div class="case-processing__section case-processing__questions">
+
+						<div class="case-question">
+
+							<div class="case-question__wrapper">
+
+								<h3 class="case-question__headline">Frage 1</h3>
+								<p class="case-question__description">Der Artikel ist von einer fachkundigen Person oder einer*m beruflichen Journalist*in geschrieben.</p>
+								<p class="case-question__hint case-question__hint--todo">Oft findest du diese Information entweder unter dem Titel oder unter dem Artikel. Ist es z.B. ein*e bekannte*r
+								Journalist*in, Autor*in oder ein*e anerkannte*r Wissenschaftler*in? Ist es eine Person, die du aus dem öffentlichen
+								Leben kennst?</p>
+								<p class="case-question__hint case-question__hint--info">Die Veröffentlichung von Inhalten unter dem eigenen Namen ermöglicht es, Inhalte zu einer bestimmten existierenden
+								Person zurückzuführen und diese beispielsweise für eine Stellungnahme zu kontaktieren. Es ist ein Indiz für
+								professionell erstellte Inhalte.</p>
+								<div class="case-question__processing">
+
+									<div class="input input--radio input--selected">
+
+										<label class="input__label" for="radio-id-1">Stimme zu</label>
+										<input type="radio" name="name" id="radio-id-1" />
+
+									</div>
+
+									<div class="input input--radio">
+									
+										<label class="input__label" for="radio-id-2">Stimme eher zu</label>
+										<input type="radio" name="name" id="radio-id-2" />
+									
+									</div>
+
+									<div class="input input--radio">
+									
+										<label class="input__label" for="radio-id-3">Stimme eher nicht zu</label>
+										<input type="radio" name="name" id="radio-id-3" />
+									
+									</div>
+
+									<div class="input input--radio">
+									
+										<label class="input__label" for="radio-id-4">Stimme nicht zu</label>
+										<input type="radio" name="name" id="radio-id-4" />
+									
+									</div>
+
+									<div class="input input--radio input--decline input--highlight">
+									
+										<label class="input__label" for="radio-id-5">
+											Kriterium ist nicht anwendbar
+											<span class="input__description">Eine Beurteilung dieser Frage ergibt keinen Sinn, weil die Autorin eine
+												Organisation ist wie bspw. bei einer
+												Pressemitteilung.</span>
+										</label>
+										<input type="radio" name="name" id="radio-id-5" />
+									
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="case-question case-question--sub-question">
+
+							<div class="case-question__wrapper">
+						
+								<h3 class="case-question__headline">Sub-Question 1</h3>
+								<p class="case-question__description">Der Artikel ist von einer fachkundigen Person oder einer*m beruflichen
+									Journalist*in geschrieben.</p>
+								<p class="case-question__hint case-question__hint--todo">Oft findest du diese Information entweder unter dem Titel
+									oder unter dem Artikel. Ist es z.B. ein*e bekannte*r
+									Journalist*in, Autor*in oder ein*e anerkannte*r Wissenschaftler*in? Ist es eine Person, die du aus dem
+									öffentlichen
+									Leben kennst?</p>
+								<p class="case-question__hint case-question__hint--info">Die Veröffentlichung von Inhalten unter dem eigenen Namen
+									ermöglicht es, Inhalte zu einer bestimmten existierenden
+									Person zurückzuführen und diese beispielsweise für eine Stellungnahme zu kontaktieren. Es ist ein Indiz für
+									professionell erstellte Inhalte.</p>
+
+								<div class="case-question__processing">
+							
+									<div class="input input--radio">
+							
+										<label class="input__label" for="radio-id-1">Stimme zu</label>
+										<input type="radio" name="name" id="radio-id-1" />
+							
+									</div>
+							
+									<div class="input input--radio">
+							
+										<label class="input__label" for="radio-id-2">Stimme eher zu</label>
+										<input type="radio" name="name" id="radio-id-2" />
+							
+									</div>
+							
+									<div class="input input--radio">
+							
+										<label class="input__label" for="radio-id-3">Stimme eher nicht zu</label>
+										<input type="radio" name="name" id="radio-id-3" />
+							
+									</div>
+							
+									<div class="input input--radio input--selected">
+							
+										<label class="input__label" for="radio-id-4">Stimme nicht zu</label>
+										<input type="radio" name="name" id="radio-id-4" />
+							
+									</div>
+							
+									<div class="input input--radio input--decline input--highlight">
+							
+										<label class="input__label" for="radio-id-5">
+											Kriterium ist nicht anwendbar
+											<span class="input__description">Eine Beurteilung dieser Frage ergibt keinen Sinn, weil die Autorin eine
+											Organisation ist wie bspw. bei einer
+											Pressemitteilung.</span>
+										</label>
+										<input type="radio" name="name" id="radio-id-5" />
+							
+									</div>
+							
+								</div>
+
+							</div>
+						
+						</div>
+
+						<div class="case-question case-question--sub-question">
+						
+							<div class="case-question__wrapper">
+						
+								<h3 class="case-question__headline">Sub-Question 2</h3>
+								<p class="case-question__description">Der Artikel ist von einer fachkundigen Person oder einer*m beruflichen
+									Journalist*in geschrieben.</p>
+								<p class="case-question__hint case-question__hint--todo">Oft findest du diese Information entweder unter dem
+									Titel
+									oder unter dem Artikel. Ist es z.B. ein*e bekannte*r
+									Journalist*in, Autor*in oder ein*e anerkannte*r Wissenschaftler*in? Ist es eine Person, die du aus dem
+									öffentlichen
+									Leben kennst?</p>
+								<p class="case-question__hint case-question__hint--info">Die Veröffentlichung von Inhalten unter dem eigenen
+									Namen
+									ermöglicht es, Inhalte zu einer bestimmten existierenden
+									Person zurückzuführen und diese beispielsweise für eine Stellungnahme zu kontaktieren. Es ist ein Indiz für
+									professionell erstellte Inhalte.</p>
+						
+								<div class="case-question__processing">
+						
+									<div class="input input--radio">
+						
+										<label class="input__label" for="radio-id-1">Stimme zu</label>
+										<input type="radio" name="name" id="radio-id-1" />
+						
+									</div>
+						
+									<div class="input input--radio">
+						
+										<label class="input__label" for="radio-id-2">Stimme eher zu</label>
+										<input type="radio" name="name" id="radio-id-2" />
+						
+									</div>
+						
+									<div class="input input--radio">
+						
+										<label class="input__label" for="radio-id-3">Stimme eher nicht zu</label>
+										<input type="radio" name="name" id="radio-id-3" />
+						
+									</div>
+						
+									<div class="input input--radio input--selected">
+						
+										<label class="input__label" for="radio-id-4">Stimme nicht zu</label>
+										<input type="radio" name="name" id="radio-id-4" />
+						
+									</div>
+						
+									<div class="input input--radio input--decline input--highlight">
+						
+										<label class="input__label" for="radio-id-5">
+											Kriterium ist nicht anwendbar
+											<span class="input__description">Eine Beurteilung dieser Frage ergibt keinen Sinn, weil die Autorin eine
+												Organisation ist wie bspw. bei einer
+												Pressemitteilung.</span>
+										</label>
+										<input type="radio" name="name" id="radio-id-5" />
+						
+									</div>
+						
+								</div>
+						
+							</div>
+						
+						</div>
+
+						<div class="case-question">
+
+							<div class="case-question__wrapper">
+						
+								<h3 class="case-question__headline">Frage 2</h3>
+								<p class="case-question__description">Der Artikel ist von einer fachkundigen Person oder einer*m beruflichen
+									Journalist*in geschrieben.</p>
+								<p class="case-question__hint case-question__hint--todo">Oft findest du diese Information entweder unter dem Titel
+									oder unter dem Artikel. Ist es z.B. ein*e bekannte*r
+									Journalist*in, Autor*in oder ein*e anerkannte*r Wissenschaftler*in? Ist es eine Person, die du aus dem
+									öffentlichen
+									Leben kennst?</p>
+								<p class="case-question__hint case-question__hint--info">Die Veröffentlichung von Inhalten unter dem eigenen Namen
+									ermöglicht es, Inhalte zu einer bestimmten existierenden
+									Person zurückzuführen und diese beispielsweise für eine Stellungnahme zu kontaktieren. Es ist ein Indiz für
+									professionell erstellte Inhalte.</p>
+								<div class="case-question__processing">
+							
+									<div class="input input--radio">
+							
+										<label class="input__label" for="radio-id-1">Stimme zu</label>
+										<input type="radio" name="name" id="radio-id-1" />
+							
+									</div>
+							
+									<div class="input input--radio">
+							
+										<label class="input__label" for="radio-id-2">Stimme eher zu</label>
+										<input type="radio" name="name" id="radio-id-2" />
+							
+									</div>
+							
+									<div class="input input--radio">
+							
+										<label class="input__label" for="radio-id-3">Stimme eher nicht zu</label>
+										<input type="radio" name="name" id="radio-id-3" />
+							
+									</div>
+							
+									<div class="input input--radio">
+							
+										<label class="input__label" for="radio-id-4">Stimme nicht zu</label>
+										<input type="radio" name="name" id="radio-id-4" />
+							
+									</div>
+							
+									<div class="input input--radio input--selected input--decline input--highlight">
+							
+										<label class="input__label" for="radio-id-5">
+											Kriterium ist nicht anwendbar
+											<span class="input__description">Eine Beurteilung dieser Frage ergibt keinen Sinn, weil die Autorin eine
+												Organisation ist wie bspw. bei einer
+												Pressemitteilung.</span>
+										</label>
+										<input type="radio" name="name" id="radio-id-5" />
+							
+									</div>
+							
+								</div>
+
+							</div>
+						
+						</div>
+
+						<div class="case-question">
+						
+							<div class="case-question__wrapper">
+						
+								<h3 class="case-question__headline">Frage 3</h3>
+								<p class="case-question__description">Der Artikel ist von einer fachkundigen Person oder einer*m beruflichen
+									Journalist*in geschrieben.</p>
+								<p class="case-question__hint case-question__hint--todo">Oft findest du diese Information entweder unter dem
+									Titel
+									oder unter dem Artikel. Ist es z.B. ein*e bekannte*r
+									Journalist*in, Autor*in oder ein*e anerkannte*r Wissenschaftler*in? Ist es eine Person, die du aus dem
+									öffentlichen
+									Leben kennst?</p>
+								<p class="case-question__hint case-question__hint--info">Die Veröffentlichung von Inhalten unter dem eigenen
+									Namen
+									ermöglicht es, Inhalte zu einer bestimmten existierenden
+									Person zurückzuführen und diese beispielsweise für eine Stellungnahme zu kontaktieren. Es ist ein Indiz für
+									professionell erstellte Inhalte.</p>
+								<div class="case-question__processing">
+						
+									<div class="input input--radio">
+						
+										<label class="input__label" for="radio-id-1">Stimme zu</label>
+										<input type="radio" name="name" id="radio-id-1" />
+						
+									</div>
+						
+									<div class="input input--radio">
+						
+										<label class="input__label" for="radio-id-2">Stimme eher zu</label>
+										<input type="radio" name="name" id="radio-id-2" />
+						
+									</div>
+						
+									<div class="input input--radio">
+						
+										<label class="input__label" for="radio-id-3">Stimme eher nicht zu</label>
+										<input type="radio" name="name" id="radio-id-3" />
+						
+									</div>
+						
+									<div class="input input--radio">
+						
+										<label class="input__label" for="radio-id-4">Stimme nicht zu</label>
+										<input type="radio" name="name" id="radio-id-4" />
+						
+									</div>
+						
+									<div class="input input--radio input--selected input--decline input--highlight">
+						
+										<label class="input__label" for="radio-id-5">
+											Kriterium ist nicht anwendbar
+											<span class="input__description">Eine Beurteilung dieser Frage ergibt keinen Sinn, weil die Autorin
+												eine
+												Organisation ist wie bspw. bei einer
+												Pressemitteilung.</span>
+										</label>
+										<input type="radio" name="name" id="radio-id-5" />
+						
+									</div>
+						
+								</div>
+						
+							</div>
+						
+						</div>
+
+						<div class="case-question">
+						
+							<div class="case-question__wrapper">
+						
+								<h3 class="case-question__headline">Frage 4</h3>
+								<p class="case-question__description">Der Artikel ist von einer fachkundigen Person oder einer*m beruflichen
+									Journalist*in geschrieben.</p>
+								<p class="case-question__hint case-question__hint--todo">Oft findest du diese Information entweder unter dem
+									Titel
+									oder unter dem Artikel. Ist es z.B. ein*e bekannte*r
+									Journalist*in, Autor*in oder ein*e anerkannte*r Wissenschaftler*in? Ist es eine Person, die du aus dem
+									öffentlichen
+									Leben kennst?</p>
+								<p class="case-question__hint case-question__hint--info">Die Veröffentlichung von Inhalten unter dem eigenen
+									Namen
+									ermöglicht es, Inhalte zu einer bestimmten existierenden
+									Person zurückzuführen und diese beispielsweise für eine Stellungnahme zu kontaktieren. Es ist ein Indiz für
+									professionell erstellte Inhalte.</p>
+								<div class="case-question__processing">
+						
+									<div class="input input--radio">
+						
+										<label class="input__label" for="radio-id-1">Stimme zu</label>
+										<input type="radio" name="name" id="radio-id-1" />
+						
+									</div>
+						
+									<div class="input input--radio">
+						
+										<label class="input__label" for="radio-id-2">Stimme eher zu</label>
+										<input type="radio" name="name" id="radio-id-2" />
+						
+									</div>
+						
+									<div class="input input--radio">
+						
+										<label class="input__label" for="radio-id-3">Stimme eher nicht zu</label>
+										<input type="radio" name="name" id="radio-id-3" />
+						
+									</div>
+						
+									<div class="input input--radio">
+						
+										<label class="input__label" for="radio-id-4">Stimme nicht zu</label>
+										<input type="radio" name="name" id="radio-id-4" />
+						
+									</div>
+						
+									<div class="input input--radio input--selected input--decline input--highlight">
+						
+										<label class="input__label" for="radio-id-5">
+											Kriterium ist nicht anwendbar
+											<span class="input__description">Eine Beurteilung dieser Frage ergibt keinen Sinn, weil die Autorin
+												eine
+												Organisation ist wie bspw. bei einer
+												Pressemitteilung.</span>
+										</label>
+										<input type="radio" name="name" id="radio-id-5" />
+						
+									</div>
+						
+								</div>
+						
+							</div>
+						
+						</div>
+
+						<div class="case-processing-meta">
+						
+							<div class="case-processing-meta__wrapper">
+						
+								<h3 class="case-processing-meta__headline">Fallbewertungskommentar</h3>
+								<p class="case-processing-meta__description">Möchtest du einen Kommentar zur Bewertung dieses Falls abgeben? Dieser wird nach Abschluss des Falls mitsamt deines
+								Namens sichtbar sein.</p>
+
+
+								
+							</div>
+						
+						</div>
+
+						<div class="case-processing-meta">
+						
+							<div class="case-processing-meta__wrapper">
+						
+								<h3 class="case-processing-meta__headline">Schlagwörter</h3>
+								<p class="case-processing-meta__description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+								magna aliquyam erat, sed diam voluptua.</p>
+						
+							</div>
+						
+						</div>
+
+						<div class="case-processing-meta">
+						
+							<div class="case-processing-meta__wrapper">
+						
+								<h3 class="case-processing-meta__headline">Rechtliche Angaben</h3>
+								<p class="case-processing-meta__description">Zum Abschluss der bestätigte die Datenschutzerklärung und die Nutzungsbedingungen.</p>
+
+								<div class="input input--radio">
+								
+									<label class="input__label" for="radio-id-123">Ich stimme den Bedingungen der Datenschutzerklärung zu</label>
+									<input type="radio" name="name" id="radio-id-123" />
+								
+								</div>
+
+								<div class="input input--radio">
+								
+									<label class="input__label" for="radio-id-1234">Ich stimme den Nutzungsbedingungen zu</label>
+									<input type="radio" name="name" id="radio-id-1234" />
+								
+								</div>
+
+								<div class="button-area button-area--horizontal button-area--right">
+
+									<a href="javascript:;" title="" class="button button--subtle">Abbrechen</a>
+									<a href="javascript:;" title="" class="button button--neon-blue">Lösung einreichen</a>
+
+								</div>
+						
+							</div>
+						
+						</div>
+
+					</div>
+
+				</div>
+
+			</article>
+
+		</div>
+
+	</main>
+
+	<footer class="footer">
+
+		<nav class="navigation-footer">
+
+			<div class="navigation-footer__chapter">
+
+				<h3 class="navigation-footer__chapter-headline">Detektive</h3>
+
+				<ul class="navigation-footer__list">
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Detektiv werden!">Detektiv werden!</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Fall einreichen">Fall einreichen</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Offene Fälle">Offene Fälle</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Archiv">Archiv</a>
+					</li>
+				</ul>
+
+			</div>
+
+			<div class="navigation-footer__chapter">
+			
+				<h3 class="navigation-footer__chapter-headline">codetekt</h3>
+			
+				<ul class="navigation-footer__list">
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Über uns">Über uns</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Das Team">Das Team</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Die Kriterien">Die Kriterien</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Ein Detektiv sein">Ein Detektiv sein</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Wir sind gemeinnützig">Wir sind gemeinnützig</a>
+					</li>
+				</ul>
+			
+			</div>
+
+			<div class="navigation-footer__chapter">
+			
+				<h3 class="navigation-footer__chapter-headline">Kontakt</h3>
+			
+				<ul class="navigation-footer__list">
+					<li class="navigation-footer__item">
+						<a href="mailto:info@codetekt.org" class="navigation-footer__link" title="E-Mail senden an: info@codetekt.org">info@codetekt.org</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Twitter">Twitter</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Facebook">Facebook</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Signal Messanger">Signal Messanger</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="LinkedIn">LinkedIn</a>
+					</li>
+				</ul>
+			
+			</div>
+
+			<div class="navigation-footer__chapter">
+			
+				<h3 class="navigation-footer__chapter-headline">Rechtliches</h3>
+			
+				<ul class="navigation-footer__list">
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Impressumg">Impressumg</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Datenschutz">Datenschutz</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a href="javascript:;" class="navigation-footer__link" title="Cookie-Richtlinie">Cookie-Richtlinie</a>
+					</li>
+				</ul>
+			
+			</div>
+
+		</nav>
+
+	</footer>
+	
+</body>
+</html>

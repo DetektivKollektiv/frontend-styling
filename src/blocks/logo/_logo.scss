@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.logo {
+	display: block;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	max-width: _b__rem(200px);
+	max-height: _b__rem(40px);
+}

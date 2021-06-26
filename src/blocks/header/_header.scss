@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.header {
+	$parent: &;
+
+	position: sticky;
+	top: 0;
+	background-color: $color__header-background;
+	z-index: 100;
+
+	&__wrapper {
+		padding: 0 _b__rem(16px);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		max-width: _b__rem(1240px);
+		margin: 0 auto;
+		min-height: _b__rem(70px);
+	}
+
+	&__navigation-main {
+		display: none;
+
+		@include _b__respond-to("min-large") {
+			display: flex;
+		}
+	}
+
+	&__navigation-mobile {
+		display: flex;
+
+		@include _b__respond-to("min-large") {
+			display: none;
+		}
+	}
+}

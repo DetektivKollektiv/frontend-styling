@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.case {
+	$parent: &;
+
+	background: url("images/case.svg") no-repeat top center;
+	background-size: cover;
+	margin: 0 _b__rem(-60px);
+	padding: 0 _b__rem(60px);
+
+	@include _b__respond-to("extralarge") {
+		max-width: _b__rem(750px);
+		margin: 0 0 0 _b__rem(-100px);
+		flex-shrink: 0;
+		padding: 0;
+	}
+
+	&__wrapper {
+		@include _b__respond-to("extralarge") {
+			padding: _b__rem(60px) _b__rem(50px) _b__rem(40px) _b__rem(100px);
+			position: sticky;
+			top: _b__rem(40px);
+		}
+	}
+
+	&__headline {
+		@include headline-2--pt-mono;
+		margin: 0 0 _b__rem(20px) 0;
+
+		&--sub-headline {
+			@include headline-4--pt-mono;
+			margin: 0 0 _b__rem(12px) 0;
+		}
+	}
+
+	&__section {
+		margin: 0 0 _b__rem(30px) 0;
+	}
+
+	&__quote {
+		@include fontawesome("f10d", "solid");
+		@include fontawesome("f10e", "solid", "after");
+		@include paragraph;
+
+		position: relative;
+		color: $color__case-quote;
+		padding: 0 _b__rem(40px);
+
+		@include _b__respond-to("extralarge") {
+			padding: 0;
+		}
+
+		&::before,
+		&::after {
+			@include _b__font-size-rem(28px);
+
+			color: $color__case-quote-sign;
+			position: absolute;
+		}
+
+		&::before {
+			top: _b__rem(-10px);
+			left: 0;
+		}
+
+		&::after {
+			bottom: _b__rem(-10px);
+			right: 0;
+		}
+
+		@include _b__respond-to("extralarge") {
+			&::before {
+				left: _b__rem(-40px);
+			}
+
+			&::after {
+				right: _b__rem(-20px);
+			}
+		}
+	}
+
+	&__link {
+		color: $color__case-link;
+		text-decoration: none;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline;
+		}
+	}
+}

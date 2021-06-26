@@ -1,0 +1,23 @@
+{
+  "name": "codetekt-frontend-styling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robin Giesler",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "install": "^0.13.0",
+    "node-sass": "^5.0.0",
+    "npm": "^7.11.2",
+    "@nirbos/bellerophon": "0.0.3",
+    "del": "^6.0.0",
+    "gulp-flatten": "^0.4.0"
+  },
+  "dependencies": {}
+}

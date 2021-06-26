@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.case-processing {
+	$parent: &;
+
+	&__wrapper {
+		padding: _b__rem(60px) 0 0 0;
+	}
+
+	&__headline {
+		@include headline-2--pt-mono;
+		margin: 0 0 _b__rem(20px) 0;
+
+		&--sub-headline {
+			@include headline-4--pt-mono;
+			margin: 0 0 _b__rem(12px) 0;
+		}
+	}
+
+	&__section {
+		margin: 0 0 _b__rem(30px) 0;
+	}
+
+	&__accept-case-buttons {
+		margin: _b__rem(44px) auto 0 auto;
+	}
+}

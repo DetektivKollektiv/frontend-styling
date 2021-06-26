@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.background-information {
+	$parent: &;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	&__item {
+		@include font__effra--regular;
+		@include _b__font-size-rem(16px);
+
+		color: $color__background-information-color;
+		margin: 0 _b__rem(30px) _b__rem(10px) 0;
+		cursor: default;
+		white-space: nowrap;
+
+		&--date {
+			@include fontawesome("f073");
+		}
+
+		&--author {
+			@include fontawesome("f007");
+		}
+
+		&::before {
+			margin: 0 _b__rem(6px) 0 0;
+		}
+	}
+}

@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.dev {
+	$parent: &;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 1000;
+
+	&__wrapper {
+		flex-direction: row;
+		display: flex;
+	}
+
+	&__breakpoint {
+		@include font__pt-mono--bold;
+		@include _b__font-size-rem(12px);
+
+		background-color: $color__rating-red;
+		padding: _b__rem(4px);
+		margin: _b__rem(4px);
+		text-transform: uppercase;
+		color: $color__white;
+
+		&--min-medium,
+		&--min-large {
+			background-color: $color__old-paragraph;
+		}
+
+		&--max-medium,
+		&--max-large {
+			background-color: $color__mysterious-blue;
+		}
+
+		&--between-large-and-extralarge {
+			background-color: $color__purple;
+		}
+
+		&--small,
+		&--medium,
+		&--large,
+		&--extralarge,
+		&--min-medium,
+		&--min-large,
+		&--max-medium,
+		&--max-large,
+		&--between-large-and-extralarge {
+			display: none;
+		}
+
+		@include _b__respond-to("small") {
+			&--small {
+				display: block;
+			}
+		}
+
+		@include _b__respond-to("medium") {
+			&--medium {
+				display: block;
+			}
+		}
+
+		@include _b__respond-to("large") {
+			&--large {
+				display: block;
+			}
+		}
+
+		@include _b__respond-to("extralarge") {
+			&--extralarge {
+				display: block;
+			}
+		}
+
+		@include _b__respond-to("min-medium") {
+			&--min-medium {
+				display: block;
+			}
+		}
+
+		@include _b__respond-to("min-large") {
+			&--min-large {
+				display: block;
+			}
+		}
+
+		@include _b__respond-to("max-medium") {
+			&--max-medium {
+				display: block;
+			}
+		}
+
+		@include _b__respond-to("max-large") {
+			&--max-large {
+				display: block;
+			}
+		}
+
+		@include _b__respond-to("between-large-and-extralarge") {
+			&--between-large-and-extralarge {
+				display: block;
+			}
+		}
+	}
+
+	&__minor-label {
+		@include font__pt-mono--regular;
+		@include _b__font-size-rem(10px);
+
+		text-transform: none;
+	}
+
+	&__playground {
+		display: none;
+
+		body.show-dev-playgrounds &,
+		&--visible {
+			display: block;
+		}
+	}
+}

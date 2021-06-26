@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.help {
+	$parent: &;
+
+	&__action-bar {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin: _b__rem(20px) auto _b__rem(6px) auto;
+
+		@include _b__respond-to("min-medium") {
+			flex-direction: row;
+			justify-content: flex-end;
+		}
+	}
+
+	&__button {
+		padding-right: 0;
+
+		&--flag {
+			color: $color__help-flag;
+			@include fontawesome("f024", "solid");
+		}
+
+		&--help {
+			@include fontawesome("f1cd", "solid");
+
+			&::before {
+				color: $color__help-life-ring;
+			}
+		}
+
+		@include _b__respond-to("small") {
+			padding: _b__rem(6px) 0 _b__rem(6px) 0;
+		}
+	}
+
+	&__accordion-content {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__link {
+		@include tile-animated;
+		margin: 0 _b__rem(30px) 0 0;
+		text-align: center;
+		width: _b__rem(360px);
+		flex-shrink: 0;
+
+		&,
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: none;
+		}
+	}
+
+	&__icon {
+		@include _b__font-size-rem(28px);
+
+		width: _b__rem(50px);
+		height: _b__rem(50px);
+		border-radius: _b__rem(50px);
+		margin: 0 auto;
+		color: $color__help-icon;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&--newspaper {
+			background-color: #68a8ff;
+			@include fontawesome("f1ea");
+		}
+
+		&--scroll-old {
+			background-color: #3a9832;
+			@include fontawesome("f70f");
+		}
+
+		&--helping-hands {
+			background-color: #be9843;
+			@include fontawesome("f4c4");
+		}
+
+		&--leaf {
+			background-color: #8f1fff;
+			@include fontawesome("f06c");
+		}
+	}
+
+	&__headline {
+		@include headline-4--effra;
+		margin: _b__rem(10px) 0 0 0;
+	}
+
+	&__description {
+		@include paragraph;
+		margin: _b__rem(10px) 0 0 0;
+	}
+}

@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+body {
+	@include font__effra--regular;
+	color: $color__mysterious-blue;
+	box-sizing: border-box;
+}
+
+a {
+	color: $color__link;
+}

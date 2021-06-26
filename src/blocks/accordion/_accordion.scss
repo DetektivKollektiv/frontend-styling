@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.accordion {
+	$parent: &;
+
+	&__call {
+		&,
+		&--closed {
+			@include fontawesome("f054", "regular", "after");
+		}
+
+		&--open {
+			@include fontawesome("f078", "regular", "after");
+		}
+
+		&::after {
+			color: $color__accordion-handle;
+			padding: 0 0 0 _b__rem(6px);
+		}
+	}
+
+	&__title {
+		color: $color__accordion-title;
+	}
+
+	&__action-description {
+		color: $color__accordion-action-description;
+		padding: 0 0 0 _b__rem(4px);
+	}
+
+	&__content {
+	}
+}

@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.navigation-footer {
+	$parent: &;
+
+	display: flex;
+	flex-direction: column;
+
+	@include _b__respond-to("min-large") {
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: _b__rem(1240px);
+		margin: 0 auto;
+	}
+
+	&__chapter {
+		margin: _b__rem(20px) 0;
+	}
+
+	&__chapter-headline {
+		@include font__pt-mono--bold;
+		@include _b__font-size-rem(22px);
+
+		color: $color__footer-chapter;
+		margin-bottom: _b__rem(14px);
+		cursor: default;
+	}
+
+	&__list {
+	}
+
+	&__item {
+		list-style-type: none;
+	}
+
+	&__link {
+		@include font__effra;
+		@include _b__font-size-rem(16px);
+
+		color: $color__navigation-footer-link;
+		padding: _b__rem(6px) 0;
+		display: inline-block;
+
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration: underline;
+		}
+	}
+}

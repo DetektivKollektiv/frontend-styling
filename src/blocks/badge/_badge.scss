@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+@import "../../assets/_initializer.scss";
+
+.badge {
+	$parent: &;
+
+	@include tile;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: _b__rem(20px);
+	margin: _b__rem(6px);
+	background-color: $color__badge;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&::before {
+		@include _b__font-size-rem(30px);
+
+		color: $color__badge-icon;
+		margin: 0 0 _b__rem(10px) 0;
+	}
+
+	&--experience {
+		@include fontawesome("f005", "solid");
+
+		background-color: $color__badge-experience;
+
+		&::before {
+			color: $color__badge-experience-color;
+		}
+	}
+
+	&--detective-amount {
+		@include fontawesome("f8ea", "solid");
+
+		background-color: $color__badge-detective-amount;
+	}
+
+	&__headline {
+		@include _headline--pt-mono;
+		@include _b__font-size-rem(18px);
+
+		color: $color__badge-headline;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__description {
+		@include font__effra--regular;
+		@include _b__font-size-rem(14px);
+
+		color: $color__badge-description;
+		margin: 0;
+		padding: 0;
+	}
+}
